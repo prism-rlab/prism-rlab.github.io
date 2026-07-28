@@ -13,6 +13,8 @@ Figures and photos can be added under `assets/img/` and referenced from the data
 
 The lab logo source is stored at `assets/img/prism-logo.pdf`; the website uses `assets/img/prism-logo.png`.
 
+UMass Boston assets are stored as `assets/img/umb-logo-blue.svg`, `assets/img/umb-campus-aerial.jpg`, and `assets/img/umb-welcome.jpg`.
+
 ## Local Preview
 
 If you have Ruby and Bundler installed:

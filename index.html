@@ -14,14 +14,68 @@ title: Home
         <a class="button secondary" href="{{ '/people/' | relative_url }}">Meet the Lab</a>
       </div>
     </div>
-    <div class="hero-visual" aria-label="Abstract probabilistic systems visualization">
-      <div class="prism-panel">
-        <div class="signal-row"></div>
-        <div class="node-field">
-          <span></span><span></span><span></span><span></span><span></span><span></span>
+    <div class="hero-visual" aria-label="Uncertainty quantification supporting decision making">
+      <div class="decision-panel">
+        <div class="panel-header">
+          <span>Uncertainty-aware decision loop</span>
+          <strong>PRISM</strong>
         </div>
-        <div class="poster-equation">p(x<sub>t</sub> | y<sub>1:t</sub>)</div>
-        <div class="poster-caption">Inference, learning, and intelligent systems</div>
+        <div class="decision-flow">
+          <article class="flow-card observations-card">
+            <span class="flow-label">Observations</span>
+            <div class="sensor-grid" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <p>Noisy streams from sensors, systems, and people</p>
+          </article>
+
+          <article class="flow-card posterior-card">
+            <span class="flow-label">Posterior Belief</span>
+            <div class="uncertainty-chart" aria-hidden="true">
+              <div class="uncertainty-band band-wide"></div>
+              <div class="uncertainty-band band-tight"></div>
+              <div class="belief-curve"></div>
+              <span class="sample s1"></span>
+              <span class="sample s2"></span>
+              <span class="sample s3"></span>
+            </div>
+            <p>Quantified uncertainty over system state and model behavior</p>
+          </article>
+
+          <article class="flow-card decision-card">
+            <span class="flow-label">Decision</span>
+            <div class="action-list" aria-hidden="true">
+              <div><span>Act A</span><b style="width: 56%"></b><em>risk</em></div>
+              <div class="selected"><span>Act B</span><b style="width: 82%"></b><em>best</em></div>
+              <div><span>Act C</span><b style="width: 38%"></b><em>wait</em></div>
+            </div>
+            <p>Choose actions by balancing expected utility, risk, and information</p>
+          </article>
+        </div>
+        <div class="panel-equation">
+          <span>p(x<sub>t</sub> | y<sub>1:t</sub>)</span>
+          <span>U(a, x) - R(a, x)</span>
+        </div>
+        <div class="panel-caption">Measure uncertainty, evaluate consequences, adapt decisions.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="affiliation-band">
+  <div class="container affiliation-grid">
+    <figure class="campus-panorama">
+      <img src="{{ '/assets/img/umb-campus-aerial.jpg' | relative_url }}" alt="Aerial view of the UMass Boston campus by the waterfront">
+    </figure>
+    <div class="affiliation-copy">
+      <img class="umb-logo" src="{{ '/assets/img/umb-logo-blue.svg' | relative_url }}" alt="UMass Boston">
+      <p class="eyebrow">Institutional Home</p>
+      <h2>Based at the University of Massachusetts Boston.</h2>
+      <p>PRISM is part of the Department of Computer Science at UMass Boston, a public research university located on Boston Harbor.</p>
+      <div class="affiliation-links">
+        <a class="text-link" href="https://www.umb.edu/">UMass Boston</a>
+        <a class="text-link" href="https://www.umb.edu/academics/csm/computer-science/">Computer Science Department</a>
       </div>
     </div>
   </div>
@@ -60,6 +114,26 @@ title: Home
       <p>PRISM is interested in students excited by probabilistic modeling, machine learning, signal processing, sensing, and intelligent systems.</p>
       <a class="button secondary" href="{{ '/contact/' | relative_url }}">Get in touch</a>
     </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container section-heading">
+    <p class="eyebrow">Research Network</p>
+    <h2>Connected to collaborators across intelligent systems, signal processing, and human-centered AI.</h2>
+  </div>
+  <div class="container partner-grid">
+    {% for partner in site.data.partners %}
+      <article class="partner-card">
+        <div class="partner-initials">{{ partner.short_name }}</div>
+        <div>
+          <p class="partner-institution">{{ partner.institution }}</p>
+          <h3>{{ partner.name }}</h3>
+          <p>{{ partner.summary }}</p>
+          <a class="text-link" href="{{ partner.url }}">Learn more</a>
+        </div>
+      </article>
+    {% endfor %}
   </div>
 </section>
 

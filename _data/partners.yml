@@ -1,0 +1,17 @@
+- name: Information Processing Laboratory
+  short_name: IPL
+  institution: Northeastern University
+  summary: Research connections through signal processing, Bayesian inference, positioning, navigation, and machine learning.
+  url: https://coe.northeastern.edu/coe-research/research-centers-institutes/center-for-signal-processing-imaging-reasoning-and-learning-spiral/
+
+- name: Cognitive Systems Laboratory
+  short_name: CSL
+  institution: Northeastern University
+  summary: Research connections through probabilistic modeling, brain-computer interfaces, adaptive systems, and human-centered intelligent systems.
+  url: https://ece.northeastern.edu/groups/csl/research/
+
+- name: Computational Behavioral Science Lab
+  short_name: CBS
+  institution: Northeastern University
+  summary: Research connections through computational, cognitive, and behavioral science for understanding and supporting human development.
+  url: https://www.khoury.northeastern.edu/research-spaces/

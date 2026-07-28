@@ -10,7 +10,7 @@ director:
     image: /assets/img/tales-placeholder.svg
 
 phd_students:
-  - name: Luis Gozales-Gudino
+  - name: Luis González-Gudiño
     role: PhD Student
     program: Computer Science PhD Program
     status: Enrolled since 2025
