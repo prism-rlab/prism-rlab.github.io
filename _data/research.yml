@@ -1,0 +1,35 @@
+- title: Probabilistic Machine Learning
+  summary: Bayesian inference, recursive estimation, online learning, and uncertainty-aware modeling for systems that must adapt as data changes over time.
+  topics:
+    - Bayesian inference
+    - Online learning
+    - Recursive Bayesian estimation
+    - Particle filtering
+- title: Physics-Guided Machine Learning
+  summary: Hybrid models that combine first-principle structure with data-driven components while preserving the physical meaning of latent states.
+  topics:
+    - Physics-guided learning
+    - Data assimilation
+    - Neural operators
+    - Dynamical systems
+- title: Human-Centered Technologies
+  summary: Machine learning and sensing methods for health and wellbeing, including wearable biosensing, active learning, and physiological modeling.
+  topics:
+    - Wearable biosensing
+    - Active learning
+    - Physiological systems
+    - Human-centered AI
+- title: Remote Sensing and Environmental Monitoring
+  summary: Statistical learning for hyperspectral imaging, water mapping, spectral unmixing, and sensing systems for sustainability.
+  topics:
+    - Hyperspectral imaging
+    - Spectral unmixing
+    - Water mapping
+    - Multi-temporal fusion
+- title: Resilient and Secure Intelligent Systems
+  summary: Distributed and probabilistic AI methods for enhanced security, including robust navigation, RF threat localization, and radar networks.
+  topics:
+    - Distributed AI
+    - Robust navigation
+    - RF sensing
+    - Cognitive radar

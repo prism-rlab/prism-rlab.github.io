@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Tales Imbiriba placeholder portrait</title>
+  <desc id="desc">Abstract PRISM Lab portrait placeholder.</desc>
+  <rect width="320" height="320" fill="#eef5f7"/>
+  <circle cx="160" cy="124" r="58" fill="#1b5f8f"/>
+  <path d="M66 286c16-66 58-104 94-104s78 38 94 104" fill="#0f8f88"/>
+  <path d="M58 72h204M92 54v204M228 54v204" stroke="#14212b" stroke-opacity=".12" stroke-width="6"/>
+  <circle cx="92" cy="72" r="11" fill="#b27718"/>
+  <circle cx="228" cy="72" r="11" fill="#653b7a"/>
+</svg>

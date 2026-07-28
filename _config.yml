@@ -1,0 +1,32 @@
+title: PRISM Lab
+tagline: Probabilistic Intelligent Systems and Machine Learning
+description: Research lab developing probabilistic and machine learning methods for intelligent systems that reason under uncertainty.
+url: "https://prism-rlab.github.io"
+baseurl: ""
+author:
+  name: Tales Imbiriba
+  title: Assistant Professor, Department of Computer Science, University of Massachusetts Boston
+  email: ""
+  website: "https://talesimbiriba.github.io"
+  github: "https://github.com/talesimbiriba"
+
+markdown: kramdown
+permalink: pretty
+
+collections:
+  projects:
+    output: true
+    permalink: /research/:name/
+  news:
+    output: false
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

@@ -1,0 +1,15 @@
+- name: Tales Imbiriba
+  role: Lab Director
+  title: Assistant Professor, Department of Computer Science, University of Massachusetts Boston
+  bio: Tales Imbiriba's research focuses on Bayesian inference, online learning, and physics-guided machine learning, with applications in human-centered technologies, remote sensing of the environment, and enhanced security technologies.
+  website: https://talesimbiriba.github.io
+  github: https://github.com/talesimbiriba
+  image: /assets/img/tales-placeholder.svg
+
+- name: Students and Collaborators
+  role: PRISM Members
+  title: Coming soon
+  bio: PRISM is growing. Add students, postdoctoral researchers, visitors, and collaborators here as the lab develops.
+  website:
+  github:
+  image: /assets/img/member-placeholder.svg
