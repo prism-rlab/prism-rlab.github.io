@@ -15,49 +15,9 @@ title: Home
       </div>
     </div>
     <div class="hero-visual" aria-label="Uncertainty quantification supporting decision making">
-      <div class="gp-panel">
-        <div class="panel-header">
-          <span>Uncertainty-aware learning</span>
-          <strong>PRISM</strong>
-        </div>
-        <div class="gp-story">
-          <div class="gp-plot" aria-hidden="true">
-            <div class="axis x-axis"></div>
-            <div class="axis y-axis"></div>
-            <div class="confidence outer"></div>
-            <div class="confidence inner"></div>
-            <svg class="curve-layer" viewBox="0 0 460 260" preserveAspectRatio="none" aria-hidden="true">
-              <path class="curve-shadow" d="M10 172 C55 124, 92 125, 132 152 S218 223, 263 159 S335 58, 450 84" />
-              <path class="curve-main" d="M10 172 C55 124, 92 125, 132 152 S218 223, 263 159 S335 58, 450 84" />
-            </svg>
-            <span class="point p1"></span>
-            <span class="point p2"></span>
-            <span class="point p3"></span>
-            <span class="point p4"></span>
-            <span class="point p5"></span>
-            <span class="point p6"></span>
-            <span class="plot-label label-data">observations</span>
-            <span class="plot-label label-band">uncertainty</span>
-            <span class="plot-label label-mean">posterior mean</span>
-          </div>
-          <div class="decision-arrow" aria-hidden="true"></div>
-          <article class="decision-block">
-            <span class="flow-label">Decision</span>
-            <h3>Choose under uncertainty</h3>
-            <div class="policy-bars" aria-hidden="true">
-              <div><span>exploit</span><b style="width: 76%"></b></div>
-              <div class="selected"><span>sample</span><b style="width: 92%"></b></div>
-              <div><span>defer</span><b style="width: 43%"></b></div>
-            </div>
-            <p>Use uncertainty to trade off expected performance, risk, and information gain.</p>
-          </article>
-        </div>
-        <div class="panel-equation">
-          <span>f(x) | y</span>
-          <span>a<sup>*</sup> = arg max E[U(a, f)]</span>
-        </div>
-        <div class="panel-caption">Model uncertainty, evaluate consequences, act with calibrated confidence.</div>
-      </div>
+      <figure class="hero-figure">
+        <img src="{{ '/assets/img/uq-decision-figure.png' | relative_url }}" alt="Posterior uncertainty curve with confidence bands highlighting a decision-relevant region">
+      </figure>
     </div>
   </div>
 </section>
