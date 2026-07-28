@@ -223,7 +223,7 @@ h3 {
   place-items: center;
 }
 
-.decision-panel {
+.gp-panel {
   width: min(100%, 520px);
   min-height: 520px;
   padding: 1rem;
@@ -251,8 +251,7 @@ h3 {
 }
 
 .panel-header span,
-.flow-label,
-.action-list em {
+.flow-label {
   color: var(--muted);
   font-size: 0.72rem;
   font-weight: 800;
@@ -264,154 +263,195 @@ h3 {
   font-size: 0.92rem;
 }
 
-.decision-flow {
-  display: grid;
-  gap: 0.85rem;
-  margin: 1rem 0;
-}
-
-.flow-card {
-  position: relative;
-  display: grid;
-  grid-template-columns: 150px minmax(0, 1fr);
-  gap: 1rem;
-  min-height: 118px;
-  padding: 1rem;
-  border: 1px solid rgba(217, 226, 234, 0.9);
-  border-radius: var(--radius);
-  background: rgba(255, 255, 255, 0.9);
-}
-
-.flow-card::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -0.78rem;
-  width: 10px;
-  height: 10px;
-  border-right: 2px solid var(--gold);
-  border-bottom: 2px solid var(--gold);
-  transform: translateX(-50%) rotate(45deg);
-  background: var(--white);
-}
-
-.flow-card:last-child::after {
-  display: none;
-}
-
-.flow-card p {
-  align-self: end;
-  margin: 1.8rem 0 0;
-  color: #354756;
-  font-size: 0.92rem;
-  line-height: 1.45;
-}
-
 .flow-label {
   position: absolute;
   left: 1rem;
   top: 0.85rem;
 }
 
-.sensor-grid {
-  align-self: end;
+.gp-story {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0.42rem;
-  padding-top: 1.5rem;
+  gap: 1rem;
+  margin: 1rem 0;
 }
 
-.sensor-grid span {
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background: #dce9ee;
-}
-
-.sensor-grid span:nth-child(3n) {
-  background: rgba(179, 84, 23, 0.9);
-}
-
-.sensor-grid span:nth-child(4n) {
-  background: rgba(31, 79, 111, 0.9);
-}
-
-.uncertainty-chart {
+.gp-plot {
   position: relative;
-  align-self: end;
-  height: 78px;
-  margin-top: 1.5rem;
-  border-left: 2px solid rgba(20, 33, 43, 0.18);
-  border-bottom: 2px solid rgba(20, 33, 43, 0.18);
+  min-height: 285px;
+  overflow: hidden;
+  border: 1px solid rgba(217, 226, 234, 0.92);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(238, 245, 247, 0.72)),
+    repeating-linear-gradient(90deg, transparent 0 45px, rgba(20, 33, 43, 0.045) 45px 46px),
+    repeating-linear-gradient(0deg, transparent 0 45px, rgba(20, 33, 43, 0.045) 45px 46px);
 }
 
-.uncertainty-band,
-.belief-curve {
+.axis {
   position: absolute;
-  left: 8%;
-  right: 6%;
+  background: rgba(20, 33, 43, 0.32);
+}
+
+.x-axis {
+  left: 42px;
+  right: 26px;
+  bottom: 38px;
+  height: 2px;
+}
+
+.y-axis {
+  left: 42px;
+  top: 28px;
+  bottom: 38px;
+  width: 2px;
+}
+
+.confidence {
+  position: absolute;
+  left: 40px;
+  right: 22px;
+  border-radius: 48% 52% 46% 54%;
+  transform: skewY(-7deg);
+}
+
+.confidence.outer {
+  top: 62px;
+  height: 154px;
+  background: rgba(179, 84, 23, 0.13);
+}
+
+.confidence.inner {
+  top: 92px;
+  height: 96px;
+  background: rgba(31, 79, 111, 0.16);
+}
+
+.curve-layer {
+  position: absolute;
+  left: 42px;
+  right: 22px;
+  top: 36px;
+  width: calc(100% - 64px);
+  height: 210px;
+  overflow: visible;
+}
+
+.curve-main,
+.curve-shadow {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.curve-shadow {
+  stroke: rgba(20, 33, 43, 0.13);
+  stroke-width: 14;
+}
+
+.curve-main {
+  stroke: var(--ink);
+  stroke-width: 5;
+}
+
+.point {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border: 2px solid var(--white);
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 2px 8px rgba(20, 33, 43, 0.18);
+}
+
+.point.p1 { left: 16%; top: 59%; }
+.point.p2 { left: 28%; top: 43%; background: var(--blue); }
+.point.p3 { left: 42%; top: 56%; }
+.point.p4 { left: 56%; top: 72%; background: var(--teal); }
+.point.p5 { left: 70%; top: 40%; background: var(--blue); }
+.point.p6 { left: 85%; top: 31%; }
+
+.plot-label {
+  position: absolute;
+  padding: 0.25rem 0.45rem;
+  border: 1px solid rgba(217, 226, 234, 0.9);
   border-radius: 999px;
-  transform: rotate(-8deg);
+  background: rgba(255, 255, 255, 0.82);
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
-.band-wide {
-  top: 20px;
-  height: 38px;
-  background: rgba(179, 84, 23, 0.14);
+.label-data { left: 54px; bottom: 52px; }
+.label-band { right: 26px; top: 26px; color: var(--gold); }
+.label-mean { left: 46%; top: 48%; color: var(--ink); }
+
+.decision-arrow {
+  width: 2px;
+  height: 34px;
+  margin: -0.15rem auto;
+  background: linear-gradient(var(--gold), var(--ink));
+  position: relative;
 }
 
-.band-tight {
-  top: 30px;
-  height: 18px;
-  background: rgba(31, 79, 111, 0.18);
-}
-
-.belief-curve {
-  top: 39px;
-  height: 4px;
-  background: linear-gradient(90deg, var(--blue), var(--teal), var(--gold));
-}
-
-.sample {
+.decision-arrow::after {
+  content: "";
   position: absolute;
+  left: 50%;
+  bottom: -1px;
   width: 10px;
   height: 10px;
-  border-radius: 50%;
-  background: var(--ink);
+  border-right: 2px solid var(--ink);
+  border-bottom: 2px solid var(--ink);
+  transform: translateX(-50%) rotate(45deg);
 }
 
-.sample.s1 { left: 22%; top: 47px; }
-.sample.s2 { left: 52%; top: 31px; background: var(--gold); }
-.sample.s3 { left: 76%; top: 39px; background: var(--teal); }
+.decision-block {
+  position: relative;
+  padding: 2.6rem 1rem 1rem;
+  border: 1px solid rgba(217, 226, 234, 0.92);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.92);
+}
 
-.action-list {
-  align-self: end;
+.decision-block h3 {
+  margin-bottom: 0.6rem;
+}
+
+.decision-block p {
+  margin: 0.85rem 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.policy-bars {
   display: grid;
   gap: 0.45rem;
-  padding-top: 1.5rem;
 }
 
-.action-list div {
+.policy-bars div {
   display: grid;
-  grid-template-columns: 42px minmax(0, 1fr) 34px;
+  grid-template-columns: 58px minmax(0, 1fr);
   align-items: center;
-  gap: 0.45rem;
+  gap: 0.6rem;
   color: var(--muted);
   font-size: 0.76rem;
   font-weight: 800;
+  text-transform: uppercase;
 }
 
-.action-list b {
+.policy-bars b {
   display: block;
-  height: 10px;
+  height: 11px;
   border-radius: 999px;
   background: rgba(31, 79, 111, 0.22);
 }
 
-.action-list .selected {
+.policy-bars .selected {
   color: var(--ink);
 }
 
-.action-list .selected b {
+.policy-bars .selected b {
   background: linear-gradient(90deg, var(--blue), var(--teal), var(--gold));
 }
 
@@ -865,16 +905,8 @@ h3 {
     min-height: 300px;
   }
 
-  .decision-panel {
+  .gp-panel {
     min-height: auto;
-  }
-
-  .flow-card {
-    grid-template-columns: 1fr;
-  }
-
-  .flow-card p {
-    margin-top: 0.6rem;
   }
 
   .panel-equation {

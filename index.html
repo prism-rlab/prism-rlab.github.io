@@ -15,49 +15,48 @@ title: Home
       </div>
     </div>
     <div class="hero-visual" aria-label="Uncertainty quantification supporting decision making">
-      <div class="decision-panel">
+      <div class="gp-panel">
         <div class="panel-header">
-          <span>Uncertainty-aware decision loop</span>
+          <span>Uncertainty-aware learning</span>
           <strong>PRISM</strong>
         </div>
-        <div class="decision-flow">
-          <article class="flow-card observations-card">
-            <span class="flow-label">Observations</span>
-            <div class="sensor-grid" aria-hidden="true">
-              <span></span><span></span><span></span><span></span><span></span><span></span>
-              <span></span><span></span><span></span><span></span><span></span><span></span>
-            </div>
-            <p>Noisy streams from sensors, systems, and people</p>
-          </article>
-
-          <article class="flow-card posterior-card">
-            <span class="flow-label">Posterior Belief</span>
-            <div class="uncertainty-chart" aria-hidden="true">
-              <div class="uncertainty-band band-wide"></div>
-              <div class="uncertainty-band band-tight"></div>
-              <div class="belief-curve"></div>
-              <span class="sample s1"></span>
-              <span class="sample s2"></span>
-              <span class="sample s3"></span>
-            </div>
-            <p>Quantified uncertainty over system state and model behavior</p>
-          </article>
-
-          <article class="flow-card decision-card">
+        <div class="gp-story">
+          <div class="gp-plot" aria-hidden="true">
+            <div class="axis x-axis"></div>
+            <div class="axis y-axis"></div>
+            <div class="confidence outer"></div>
+            <div class="confidence inner"></div>
+            <svg class="curve-layer" viewBox="0 0 460 260" preserveAspectRatio="none" aria-hidden="true">
+              <path class="curve-shadow" d="M10 172 C55 124, 92 125, 132 152 S218 223, 263 159 S335 58, 450 84" />
+              <path class="curve-main" d="M10 172 C55 124, 92 125, 132 152 S218 223, 263 159 S335 58, 450 84" />
+            </svg>
+            <span class="point p1"></span>
+            <span class="point p2"></span>
+            <span class="point p3"></span>
+            <span class="point p4"></span>
+            <span class="point p5"></span>
+            <span class="point p6"></span>
+            <span class="plot-label label-data">observations</span>
+            <span class="plot-label label-band">uncertainty</span>
+            <span class="plot-label label-mean">posterior mean</span>
+          </div>
+          <div class="decision-arrow" aria-hidden="true"></div>
+          <article class="decision-block">
             <span class="flow-label">Decision</span>
-            <div class="action-list" aria-hidden="true">
-              <div><span>Act A</span><b style="width: 56%"></b><em>risk</em></div>
-              <div class="selected"><span>Act B</span><b style="width: 82%"></b><em>best</em></div>
-              <div><span>Act C</span><b style="width: 38%"></b><em>wait</em></div>
+            <h3>Choose under uncertainty</h3>
+            <div class="policy-bars" aria-hidden="true">
+              <div><span>exploit</span><b style="width: 76%"></b></div>
+              <div class="selected"><span>sample</span><b style="width: 92%"></b></div>
+              <div><span>defer</span><b style="width: 43%"></b></div>
             </div>
-            <p>Choose actions by balancing expected utility, risk, and information</p>
+            <p>Use uncertainty to trade off expected performance, risk, and information gain.</p>
           </article>
         </div>
         <div class="panel-equation">
-          <span>p(x<sub>t</sub> | y<sub>1:t</sub>)</span>
-          <span>U(a, x) - R(a, x)</span>
+          <span>f(x) | y</span>
+          <span>a<sup>*</sup> = arg max E[U(a, f)]</span>
         </div>
-        <div class="panel-caption">Measure uncertainty, evaluate consequences, adapt decisions.</div>
+        <div class="panel-caption">Model uncertainty, evaluate consequences, act with calibrated confidence.</div>
       </div>
     </div>
   </div>
