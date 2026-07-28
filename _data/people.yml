@@ -56,3 +56,22 @@ undergraduate_students:
     website:
     github:
     image: /assets/img/member-placeholder.svg
+
+  - name: Vinay R. Kulkarni
+    role: Undergraduate Student
+    program: Computer Science
+    status:
+    bio:
+    website:
+    github:
+    image: /assets/img/member-placeholder.svg
+
+alumni:
+  - name: Sawyer B. Bowerman
+    role: Former Undergraduate Student
+    program: Computer Science
+    status: Graduated in early 2026
+    bio:
+    website:
+    github:
+    image: /assets/img/member-placeholder.svg

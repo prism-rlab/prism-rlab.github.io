@@ -59,9 +59,20 @@ description: People at PRISM Lab.
 
 <section class="section section-muted">
   <div class="container people-section">
-    <h2>Undergraduate Student</h2>
+    <h2>Undergraduate Students</h2>
     <div class="people-grid compact">
       {% for person in site.data.people.undergraduate_students %}
+        {% include person-card.html person=person %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container people-section">
+    <h2>Alumni</h2>
+    <div class="people-grid compact">
+      {% for person in site.data.people.alumni %}
         {% include person-card.html person=person %}
       {% endfor %}
     </div>
