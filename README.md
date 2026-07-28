@@ -11,6 +11,8 @@ The site is designed to be maintained with simple Jekyll data files:
 
 Figures and photos can be added under `assets/img/` and referenced from the data files or pages.
 
+The lab logo source is stored at `assets/img/prism-logo.pdf`; the website uses `assets/img/prism-logo.png`.
+
 ## Local Preview
 
 If you have Ruby and Bundler installed:

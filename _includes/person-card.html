@@ -1,0 +1,15 @@
+{% assign person = include.person %}
+<article class="person-card">
+  <img src="{{ person.image | relative_url }}" alt="">
+  <div>
+    <p class="person-role">{{ person.role }}</p>
+    <h3>{{ person.name }}</h3>
+    <p class="person-title">{{ person.program }}</p>
+    {% if person.status %}<p class="person-status">{{ person.status }}</p>{% endif %}
+    {% if person.bio %}<p>{{ person.bio }}</p>{% endif %}
+    <div class="person-links">
+      {% if person.website %}<a href="{{ person.website }}">Website</a>{% endif %}
+      {% if person.github %}<a href="{{ person.github }}">GitHub</a>{% endif %}
+    </div>
+  </div>
+</article>

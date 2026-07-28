@@ -1,15 +1,58 @@
-- name: Tales Imbiriba
-  role: Lab Director
-  title: Assistant Professor, Department of Computer Science, University of Massachusetts Boston
-  bio: Tales Imbiriba's research focuses on Bayesian inference, online learning, and physics-guided machine learning, with applications in human-centered technologies, remote sensing of the environment, and enhanced security technologies.
-  website: https://talesimbiriba.github.io
-  github: https://github.com/talesimbiriba
-  image: /assets/img/tales-placeholder.svg
+director:
+  - name: Tales Imbiriba
+    role: Lab Director
+    title: Assistant Professor
+    program: Department of Computer Science, University of Massachusetts Boston
+    status:
+    bio: Research interests include Bayesian inference, online learning, and physics-guided machine learning, with applications in human-centered technologies, remote sensing, and enhanced security technologies.
+    website: https://talesimbiriba.github.io
+    github: https://github.com/talesimbiriba
+    image: /assets/img/tales-placeholder.svg
 
-- name: Students and Collaborators
-  role: PRISM Members
-  title: Coming soon
-  bio: PRISM is growing. Add students, postdoctoral researchers, visitors, and collaborators here as the lab develops.
-  website:
-  github:
-  image: /assets/img/member-placeholder.svg
+phd_students:
+  - name: Luis Gozales-Gudino
+    role: PhD Student
+    program: Computer Science PhD Program
+    status: Enrolled since 2025
+    bio:
+    website:
+    github:
+    image: /assets/img/member-placeholder.svg
+
+  - name: Alexandra R. Freeman
+    role: PhD Student
+    program: Computational Sciences Program
+    status: Joining in Fall 2026
+    bio:
+    website:
+    github:
+    image: /assets/img/member-placeholder.svg
+
+  - name: Narin Rahimzadeh
+    role: PhD Student
+    program: Computer Science PhD Program
+    status: Joining in Fall 2026
+    bio:
+    website:
+    github:
+    image: /assets/img/member-placeholder.svg
+
+masters_students:
+  - name: VS Praneeth Lnu
+    role: MS Student
+    program: Computer Science Master's Program
+    status:
+    bio:
+    website:
+    github:
+    image: /assets/img/member-placeholder.svg
+
+undergraduate_students:
+  - name: Kenneth Chen
+    role: Undergraduate Student
+    program: Computer Science
+    status:
+    bio:
+    website:
+    github:
+    image: /assets/img/member-placeholder.svg
