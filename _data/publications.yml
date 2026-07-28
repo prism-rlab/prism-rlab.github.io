@@ -91,9 +91,28 @@ groups:
           paper: https://arxiv.org/abs/2310.02340
           doi: https://doi.org/10.1109/TCI.2023.3321985
 
-  - topic: Security and Radar Systems
-    summary: Bayesian fusion and intelligent sensing methods for radar, tracking, and enhanced security.
+  - topic: Security, Navigation, and RF Sensing
+    summary: Bayesian fusion, active sensing, and intelligent learning methods for navigation, RF monitoring, radar, and enhanced security.
     papers:
+      - title: Active Jammer Localization via Acquisition-Aware Path Planning
+        authors: Luis González-Gudiño, Mariona Jaramillo-Civill, Pau Closas, Tales Imbiriba
+        venue: IEEE International Conference on Acoustics, Speech, and Signal Processing
+        year: 2026
+        note: Bayesian optimization and acquisition-aware path planning for sample-efficient active jammer localization.
+        links:
+          paper: https://www.cmsworkshops.com/ICASSP2026/view_paper.php?PaperNum=14428&bare=1
+          preprint: https://arxiv.org/abs/2510.14790
+
+      - title: Bayesian Jammer Localization with a Hybrid CNN and Path-Loss Mixture of Experts
+        authors: Mariona Jaramillo-Civill, Luis González-Gudiño, Tales Imbiriba, Pau Closas
+        venue: IEEE International Conference on Acoustics, Speech, and Signal Processing Workshops
+        year: 2026
+        note: Hybrid Bayesian mixture-of-experts model combining path-loss structure and CNN features for uncertainty-aware GNSS jammer localization.
+        links:
+          paper: https://www.cmsworkshops.com/ICASSP2026/search.php?bare=1&show=search
+          preprint: https://arxiv.org/abs/2510.20666
+          doi: https://doi.org/10.1109/ICASSP55912.2026.11462213
+
       - title: "Multistatic-Radar RCS-Signature Recognition of Aerial Vehicles: A Bayesian Fusion Approach"
         authors: Michael Potter, Murat Akçakaya, Marius Necsoiu, Gunar Schirner, Deniz Erdoğmuş, Tales Imbiriba
         venue: IEEE Transactions on Aerospace and Electronic Systems

@@ -1,0 +1,29 @@
+- title: Active jammer localization
+  subtitle: Acquisition-aware path planning
+  image: /assets/img/highlights/active-jammer-path-planning.jpg
+  source: Active Jammer Localization via Acquisition-Aware Path Planning
+  url: https://arxiv.org/abs/2510.14790
+
+- title: Bayesian jammer localization
+  subtitle: Hybrid CNN and path-loss mixture of experts
+  image: /assets/img/highlights/bayesian-jammer-heatmaps.jpg
+  source: Bayesian Jammer Localization with a Hybrid CNN and Path-Loss Mixture of Experts
+  url: https://arxiv.org/abs/2510.20666
+
+- title: Neural operators and data assimilation
+  subtitle: Recursive prediction for dynamical systems
+  image: /assets/img/highlights/neural-operators-dynamics.jpg
+  source: Learning Semilinear Neural Operators
+  url: https://arxiv.org/abs/2402.15656
+
+- title: Hyperspectral unmixing
+  subtitle: Interpretable abundance maps
+  image: /assets/img/highlights/hyperspectral-unmixing-maps.jpg
+  source: Learning Interpretable Deep Disentangled Neural Networks for Hyperspectral Unmixing
+  url: https://arxiv.org/abs/2310.02340
+
+- title: Bayesian data fusion
+  subtitle: Distributed inference with shared priors
+  image: /assets/img/highlights/bayesian-data-fusion-framework.jpg
+  source: Bayesian Data Fusion With Shared Priors
+  url: https://arxiv.org/abs/2212.07311
