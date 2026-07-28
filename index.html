@@ -22,6 +22,27 @@ title: Home
   </div>
 </section>
 
+<section class="section highlights-section" aria-labelledby="featured-research-title">
+  <div class="container section-heading">
+    <p class="eyebrow">Featured Research</p>
+    <h2 id="featured-research-title">Recent work across uncertainty, learning, sensing, and decision making.</h2>
+  </div>
+  <div class="container highlight-carousel" aria-label="Featured research highlights">
+    {% for item in site.data.highlights %}
+      <article class="highlight-card">
+        <a href="{{ item.url }}" aria-label="{{ item.title }}">
+          <img src="{{ item.image | relative_url }}" alt="{{ item.source }}">
+          <div class="highlight-copy">
+            <p>{{ item.subtitle }}</p>
+            <h3>{{ item.title }}</h3>
+            <span>{{ item.source }}</span>
+          </div>
+        </a>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
 <section class="affiliation-band">
   <div class="container affiliation-grid">
     <figure class="campus-panorama">
