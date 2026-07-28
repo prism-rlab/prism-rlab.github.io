@@ -1,31 +1,104 @@
-- title: Wearable Biosensing to Predict Imminent Aggressive Behavior in Psychiatric Inpatient Youths With Autism
-  authors: Tales Imbiriba and collaborators
-  venue: JAMA Network Open
-  year: 2019
-  area: Human-centered technologies
-  links:
-    paper: https://jamanetwork.com/
+groups:
+  - topic: Probabilistic Machine Learning and Data Fusion
+    summary: Bayesian inference, distributed learning, and principled uncertainty fusion across models, sensors, and agents.
+    papers:
+      - title: A Bayesian Framework for Clustered Federated Learning
+        authors: Peng Wu, Tales Imbiriba, Pau Closas
+        venue: IEEE Transactions on Pattern Analysis and Machine Intelligence
+        year: 2026
+        note: Bayesian data association for clustered federated learning under non-IID client data.
+        links:
+          paper: https://collaborate.umb.edu/en/publications/a-bayesian-framework-for-clustered-federated-learning/
+          doi: https://doi.org/10.1109/TPAMI.2025.3637562
 
-- title: Physics-guided machine learning and augmented physical-based models
-  authors: Tales Imbiriba and collaborators
-  venue: Selected recent work
-  year: 2024
-  area: Physics-guided machine learning
-  links:
-    scholar: https://scholar.google.com/
+      - title: Bayesian Data Fusion With Shared Priors
+        authors: Peng Wu, Tales Imbiriba, Víctor Elvira, Pau Closas
+        venue: IEEE Transactions on Signal Processing
+        year: 2024
+        note: Analysis and correction of prior reuse in Bayesian fusion across distributed estimators.
+        links:
+          paper: https://arxiv.org/abs/2212.07311
+          doi: https://doi.org/10.1109/TSP.2023.3343564
 
-- title: Recursive Bayesian estimation and online learning for dynamic systems
-  authors: Tales Imbiriba and collaborators
-  venue: Selected publications
-  year: 2023
-  area: Probabilistic machine learning
-  links:
-    scholar: https://scholar.google.com/
+  - topic: Physics-Guided Learning and Recursive Estimation
+    summary: Hybrid models that combine first-principle structure, data-driven corrections, and recursive inference.
+    papers:
+      - title: A Hybrid ODE-NN Framework for Modeling Incomplete Physiological Systems
+        authors: Ahmet Demirkaya, Kyle Lockwood, Georgios Stratis, Tales Imbiriba, Iulian Ilieş, Sumientra Rampersad, Elie Alhajjar, Giovanna Guidoboni, Zachary C. Danziger, Deniz Erdoğmuş
+        venue: IEEE Transactions on Biomedical Engineering
+        year: 2025
+        note: Neural corrections to incomplete physiological ODE models with recursive Bayesian estimation.
+        links:
+          paper: https://pubmed.ncbi.nlm.nih.gov/40030364/
+          doi: https://doi.org/10.1109/TBME.2024.3505796
 
-- title: Hyperspectral imaging, spectral unmixing, and remote sensing
-  authors: Tales Imbiriba and collaborators
-  venue: Selected publications
-  year: 2023
-  area: Remote sensing
-  links:
-    scholar: https://scholar.google.com/
+      - title: Learning Semilinear Neural Operators - A Unified Recursive Framework for Prediction and Data Assimilation
+        authors: Ashutosh Singh, Ricardo Augusto Borsoi, Deniz Erdoğmuş, Tales Imbiriba
+        venue: International Conference on Learning Representations
+        year: 2024
+        note: Recursive prediction and correction framework for neural operators and spatio-temporal PDEs.
+        links:
+          paper: https://arxiv.org/abs/2402.15656
+
+      - title: Augmented Physics-Based Machine Learning for Navigation and Tracking
+        authors: Tales Imbiriba, Ondřej Straka, Jindřich Duník, Pau Closas
+        venue: IEEE Transactions on Aerospace and Electronic Systems
+        year: 2024
+        note: Physics-based tracking models augmented with data-driven components while preserving state meaning.
+        links:
+          paper: https://collaborate.umb.edu/en/publications/augmented-physics-based-machine-learning-for-navigation-and-track/
+          doi: https://doi.org/10.1109/TAES.2023.3328853
+
+  - topic: Human-Centered Health and Active Learning
+    summary: Machine learning systems for health, wellbeing, biosensing, and uncertainty-guided experimentation.
+    papers:
+      - title: Wearable Biosensing to Predict Imminent Aggressive Behavior in Psychiatric Inpatient Youths With Autism
+        authors: Tales Imbiriba, Ahmet Demirkaya, Ashutosh Singh, Deniz Erdoğmuş, Matthew S. Goodwin, and collaborators
+        venue: JAMA Network Open
+        year: 2023
+        note: Machine learning with wearable biosignals for forecasting aggressive behavior before onset.
+        links:
+          paper: https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2813185
+          doi: https://doi.org/10.1001/jamanetworkopen.2023.48898
+
+      - title: Efficient TMS-Based Motor Cortex Mapping Using Gaussian Process Active Learning
+        authors: Razieh Faghihpirayesh, Mathew Yarossi, Tales Imbiriba, Dana H. Brooks, Eugene Tunik, Deniz Erdoğmuş
+        venue: IEEE Transactions on Neural Systems and Rehabilitation Engineering
+        year: 2021
+        note: Gaussian process active learning for selecting informative stimulation locations in motor cortex mapping.
+        links:
+          paper: https://pubmed.ncbi.nlm.nih.gov/34406942/
+          doi: https://doi.org/10.1109/TNSRE.2021.3105644
+
+  - topic: Remote Sensing and Environmental Monitoring
+    summary: Probabilistic, recursive, and interpretable learning methods for hyperspectral and satellite imaging.
+    papers:
+      - title: "Recursive Classification of Satellite Imaging Time-Series: An Application to Land Cover Mapping"
+        authors: Helena Calatrava, Bhavya Duvvuri, Haoqing Li, Ricardo Borsoi, Edward Beighley, Deniz Erdoğmuş, Pau Closas, Tales Imbiriba
+        venue: ISPRS Journal of Photogrammetry and Remote Sensing
+        year: 2024
+        note: Recursive Bayesian classification for land cover and water mapping from satellite image time-series.
+        links:
+          paper: https://collaborate.umb.edu/en/publications/recursive-classification-of-satellite-imaging-time-series-an-appl/
+          doi: https://doi.org/10.1016/j.isprsjprs.2024.09.003
+
+      - title: Learning Interpretable Deep Disentangled Neural Networks for Hyperspectral Unmixing
+        authors: Ricardo Augusto Borsoi, Deniz Erdoğmuş, Tales Imbiriba
+        venue: IEEE Transactions on Computational Imaging
+        year: 2023
+        note: Probabilistic variational deep learning for interpretable hyperspectral unmixing.
+        links:
+          paper: https://arxiv.org/abs/2310.02340
+          doi: https://doi.org/10.1109/TCI.2023.3321985
+
+  - topic: Security and Radar Systems
+    summary: Bayesian fusion and intelligent sensing methods for radar, tracking, and enhanced security.
+    papers:
+      - title: "Multistatic-Radar RCS-Signature Recognition of Aerial Vehicles: A Bayesian Fusion Approach"
+        authors: Michael Potter, Murat Akçakaya, Marius Necsoiu, Gunar Schirner, Deniz Erdoğmuş, Tales Imbiriba
+        venue: IEEE Transactions on Aerospace and Electronic Systems
+        year: 2025
+        note: Bayesian fusion for radar cross-section signature recognition of aerial vehicles.
+        links:
+          paper: https://collaborate.umb.edu/en/publications/multistatic-radar-rcs-signature-recognition-of-aerial-vehicles-a-/
+          doi: https://doi.org/10.1109/TAES.2024.3445323

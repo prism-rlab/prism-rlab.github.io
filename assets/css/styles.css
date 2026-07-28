@@ -412,9 +412,30 @@ h3 {
 
 .news-list,
 .stack,
+.publication-groups,
 .publication-list {
   display: grid;
   gap: 1rem;
+}
+
+.publication-groups {
+  gap: 3rem;
+}
+
+.publication-topic-heading {
+  max-width: 820px;
+  margin-bottom: 1rem;
+}
+
+.publication-topic-heading h2 {
+  font-size: clamp(1.8rem, 3vw, 2.65rem);
+}
+
+.publication-topic-heading p,
+.publication-note,
+.pub-authors,
+.pub-meta {
+  color: var(--muted);
 }
 
 .news-list:not(.wide) {
@@ -467,7 +488,8 @@ h3 {
 }
 
 .research-row h2,
-.publication h2 {
+.publication h2,
+.publication h3 {
   font-family: Inter, system-ui, sans-serif;
   font-size: 1.35rem;
   line-height: 1.25;
@@ -500,9 +522,12 @@ h3 {
 
 .person-card img {
   width: 140px;
+  height: 140px;
   aspect-ratio: 1;
   border-radius: var(--radius);
   background: var(--soft);
+  object-fit: cover;
+  object-position: center top;
 }
 
 .person-card h2 {
@@ -537,6 +562,10 @@ h3 {
 
 .publication {
   grid-template-columns: 88px minmax(0, 1fr);
+}
+
+.publication-note {
+  margin-top: 0.55rem;
 }
 
 .contact-grid {
@@ -686,5 +715,6 @@ h3 {
 
   .person-card img {
     width: 120px;
+    height: 120px;
   }
 }
